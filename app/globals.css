@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 10, 10, 20;
+  --accent-glow: 80, 200, 255;
+  --neon-primary: 0, 255, 255;
+  --neon-secondary: 255, 0, 255;
+}
+
+@layer base {
+  :root {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 180 100% 50%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 300 100% 50%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 10% 3.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 180 100% 50%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 10% 3.9%;
+    --input: 240 10% 3.9%;
+    --ring: 180 100% 50%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    background: linear-gradient(to bottom,
+      rgb(var(--background-start-rgb)),
+      rgb(var(--background-end-rgb)));
+  }
+}
+
+.glow {
+  box-shadow: 0 0 10px rgba(var(--accent-glow), 0.5),
+              0 0 20px rgba(var(--accent-glow), 0.3),
+              0 0 30px rgba(var(--accent-glow), 0.1);
+}
+
+.neon-text {
+  text-shadow: 0 0 10px rgba(var(--neon-primary), 0.8),
+               0 0 20px rgba(var(--neon-primary), 0.4);
+}
+
+.neon-border {
+  border: 1px solid rgba(var(--neon-primary), 0.5);
+  box-shadow: 0 0 10px rgba(var(--neon-primary), 0.3),
+              inset 0 0 10px rgba(var(--neon-primary), 0.3);
+}
+
+.floating {
+  animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+.grid-background {
+  background-image: linear-gradient(rgba(var(--neon-primary), 0.1) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(var(--neon-primary), 0.1) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
