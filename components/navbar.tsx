@@ -81,7 +81,7 @@ const Navbar = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="md:hidden bg-gray/90"
+            className="md:hidden bg-gray-900/90"
           >
             <div className="px-2 pt-2 pb-3 text-center mx-auto space-y-1">
               {navItems.map((item) => (
