@@ -35,58 +35,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative min-h-[95vh] flex items-center justify-center px-4">
         <div>
-        {/* <Particles
-        id="tsparticles"
-        init={particlesInit}
-        loaded={particlesLoaded}
-        options={{
-          background: {
-            color: {
-              value: "transparent",
-            },
-          },
-          fpsLimit: 120,
-          particles: {
-            color: {
-              value: "#00ffff",
-            },
-            links: {
-              color: "#00ffff",
-              distance: 150,
-              enable: true,
-              opacity: 0.2,
-              width: 1,
-            },
-            move: {
-              enable: true,
-              outModes: {
-                default: "bounce",
-              },
-              random: false,
-              speed: 1,
-              straight: false,
-            },
-            number: {
-              density: {
-                enable: true,
-                area: 800,
-              },
-              value: 80,
-            },
-            opacity: {
-              value: 0.2,
-            },
-            shape: {
-              type: "circle",
-            },
-            size: {
-              value: { min: 1, max: 3 },
-            },
-          },
-          detectRetina: true,
-        }}
-         className="w-[100%] h-[100%] z-0"
-      /> */}
+      
   <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff06_1px,transparent_1px),linear-gradient(to_bottom,#ffffff06_1px,transparent_1px)] bg-[size:14px_24px]" />
   <div className="absolute bottom-10 left-0 w-64 h-64 bg-indigo-900 rounded-full filter blur-3xl opacity-10 animate-pulse" />
 
