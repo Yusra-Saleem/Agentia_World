@@ -170,7 +170,7 @@ export default function Footer() {
           transition={{ duration: 0.5, delay: 0.8 }}
           className="text-center mt-8 text-sm text-gray-500"
         >
-          © {new Date().getFullYear()} Agentia World. All rights reserved.
+          © {new Date().getFullYear()} Agentia World - YUSRA SALEEM. All rights reserved.
         </motion.div>
       </div>
 
