@@ -74,6 +74,14 @@ export default function Technology() {
               Discover our cutting-edge AI technologies powering the next generation of intelligent solutions
             </p>
           </motion.div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1 }}
+            className="absolute bottom-10 left-1/2 transform -translate-x-1/2 cursor-pointer"
+          >
+            <ChevronDown className="w-8 h-8 text-cyan-400 animate-bounce" />
+          </motion.div>
         </div>
       </section>
 
