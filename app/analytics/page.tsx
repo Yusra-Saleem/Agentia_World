@@ -172,7 +172,7 @@ export default function Analytics() {
               {
                 year: "2024 Q1",
                 title: "Enhanced Learning",
-                description: "Implementation of advanced learning algorithms"
+                description: "Implement of advanced learning algorithms"
               },
               {
                 year: "2024 Q2",
