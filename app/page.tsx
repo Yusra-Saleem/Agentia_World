@@ -30,7 +30,7 @@ export default function Home() {
   return (
     <main className="min-h-screen">
      
-     <MouseCursor />
+    <span className="hidden md:block"><MouseCursor /></span> 
      <GridBackground />
       {/* Hero Section */}
       <section className="relative min-h-[95vh] flex items-center justify-center px-4">
