@@ -2,7 +2,8 @@
 
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { useRef, useEffect, useState } from 'react'
-import { Brain, Cpu, Network, Workflow, Lock, Zap } from 'lucide-react'
+import { Brain,  ChevronDown , Cpu, Network, Workflow, Lock, Zap } from 'lucide-react'
+
 
 export default function Technology() {
   const containerRef = useRef<HTMLDivElement>(null)
